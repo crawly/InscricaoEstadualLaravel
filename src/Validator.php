@@ -3,7 +3,6 @@
 
 namespace Crawly\InscricaoEstadualLaravel;
 
-use Illuminate\Validation\Validator as BaseValidator;
 use Thiagocfn\InscricaoEstadual\Util\Estados;
 use Thiagocfn\InscricaoEstadual\Util\Validador;
 
@@ -11,12 +10,12 @@ use Thiagocfn\InscricaoEstadual\Util\Validador;
  * @SuppressWarnings("PHPMD.TooManyMethods")
  * @SuppressWarnings("PHPMD.TooManyPublicMethods")
  */
-class Validator extends BaseValidator
+class Validator
 {
     /**
      * @SuppressWarnings("PHPMD.UnusedFormalParameter")
      */
-    public function validateInscricaoEstadualAc($attribute, $value): bool
+    public function validateInscricaoEstadualAc($attribute, $value, $parameters, $validator): bool
     {
         $inscricaoEstadual = $this->sanitize($value);
 
@@ -26,7 +25,7 @@ class Validator extends BaseValidator
     /**
      * @SuppressWarnings("PHPMD.UnusedFormalParameter")
      */
-    public function validateInscricaoEstadualAl($attribute, $value): bool
+    public function validateInscricaoEstadualAl($attribute, $value, $parameters, $validator): bool
     {
         $inscricaoEstadual = $this->sanitize($value);
 
@@ -36,7 +35,7 @@ class Validator extends BaseValidator
     /**
      * @SuppressWarnings("PHPMD.UnusedFormalParameter")
      */
-    public function validateInscricaoEstadualAp($attribute, $value): bool
+    public function validateInscricaoEstadualAp($attribute, $value, $parameters, $validator): bool
     {
         $inscricaoEstadual = $this->sanitize($value);
 
@@ -46,7 +45,7 @@ class Validator extends BaseValidator
     /**
      * @SuppressWarnings("PHPMD.UnusedFormalParameter")
      */
-    public function validateInscricaoEstadualAm($attribute, $value): bool
+    public function validateInscricaoEstadualAm($attribute, $value, $parameters, $validator): bool
     {
         $inscricaoEstadual = $this->sanitize($value);
 
@@ -56,7 +55,7 @@ class Validator extends BaseValidator
     /**
      * @SuppressWarnings("PHPMD.UnusedFormalParameter")
      */
-    public function validateInscricaoEstadualBa($attribute, $value): bool
+    public function validateInscricaoEstadualBa($attribute, $value, $parameters, $validator): bool
     {
         $inscricaoEstadual = $this->sanitize($value);
 
@@ -66,7 +65,7 @@ class Validator extends BaseValidator
     /**
      * @SuppressWarnings("PHPMD.UnusedFormalParameter")
      */
-    public function validateInscricaoEstadualCe($attribute, $value): bool
+    public function validateInscricaoEstadualCe($attribute, $value, $parameters, $validator): bool
     {
         $inscricaoEstadual = $this->sanitize($value);
 
@@ -76,7 +75,7 @@ class Validator extends BaseValidator
     /**
      * @SuppressWarnings("PHPMD.UnusedFormalParameter")
      */
-    public function validateInscricaoEstadualDf($attribute, $value): bool
+    public function validateInscricaoEstadualDf($attribute, $value, $parameters, $validator): bool
     {
         $inscricaoEstadual = $this->sanitize($value);
 
@@ -86,7 +85,7 @@ class Validator extends BaseValidator
     /**
      * @SuppressWarnings("PHPMD.UnusedFormalParameter")
      */
-    public function validateInscricaoEstadualEs($attribute, $value): bool
+    public function validateInscricaoEstadualEs($attribute, $value, $parameters, $validator): bool
     {
         $inscricaoEstadual = $this->sanitize($value);
 
@@ -96,7 +95,7 @@ class Validator extends BaseValidator
     /**
      * @SuppressWarnings("PHPMD.UnusedFormalParameter")
      */
-    public function validateInscricaoEstadualGo($attribute, $value): bool
+    public function validateInscricaoEstadualGo($attribute, $value, $parameters, $validator): bool
     {
         $inscricaoEstadual = $this->sanitize($value);
 
@@ -106,7 +105,7 @@ class Validator extends BaseValidator
     /**
      * @SuppressWarnings("PHPMD.UnusedFormalParameter")
      */
-    public function validateInscricaoEstadualMa($attribute, $value): bool
+    public function validateInscricaoEstadualMa($attribute, $value, $parameters, $validator): bool
     {
         $inscricaoEstadual = $this->sanitize($value);
 
@@ -116,7 +115,7 @@ class Validator extends BaseValidator
     /**
      * @SuppressWarnings("PHPMD.UnusedFormalParameter")
      */
-    public function validateInscricaoEstadualMt($attribute, $value): bool
+    public function validateInscricaoEstadualMt($attribute, $value, $parameters, $validator): bool
     {
         $inscricaoEstadual = $this->sanitize($value);
 
@@ -126,7 +125,7 @@ class Validator extends BaseValidator
     /**
      * @SuppressWarnings("PHPMD.UnusedFormalParameter")
      */
-    public function validateInscricaoEstadualMs($attribute, $value): bool
+    public function validateInscricaoEstadualMs($attribute, $value, $parameters, $validator): bool
     {
         $inscricaoEstadual = $this->sanitize($value);
 
@@ -136,7 +135,7 @@ class Validator extends BaseValidator
     /**
      * @SuppressWarnings("PHPMD.UnusedFormalParameter")
      */
-    public function validateInscricaoEstadualMg($attribute, $value): bool
+    public function validateInscricaoEstadualMg($attribute, $value, $parameters, $validator): bool
     {
         $inscricaoEstadual = $this->sanitize($value);
 
@@ -146,7 +145,7 @@ class Validator extends BaseValidator
     /**
      * @SuppressWarnings("PHPMD.UnusedFormalParameter")
      */
-    public function validateInscricaoEstadualPa($attribute, $value): bool
+    public function validateInscricaoEstadualPa($attribute, $value, $parameters, $validator): bool
     {
         $inscricaoEstadual = $this->sanitize($value);
 
@@ -156,7 +155,7 @@ class Validator extends BaseValidator
     /**
      * @SuppressWarnings("PHPMD.UnusedFormalParameter")
      */
-    public function validateInscricaoEstadualPb($attribute, $value): bool
+    public function validateInscricaoEstadualPb($attribute, $value, $parameters, $validator): bool
     {
         $inscricaoEstadual = $this->sanitize($value);
 
@@ -166,7 +165,7 @@ class Validator extends BaseValidator
     /**
      * @SuppressWarnings("PHPMD.UnusedFormalParameter")
      */
-    public function validateInscricaoEstadualPr($attribute, $value): bool
+    public function validateInscricaoEstadualPr($attribute, $value, $parameters, $validator): bool
     {
         $inscricaoEstadual = $this->sanitize($value);
 
@@ -176,7 +175,7 @@ class Validator extends BaseValidator
     /**
      * @SuppressWarnings("PHPMD.UnusedFormalParameter")
      */
-    public function validateInscricaoEstadualPe($attribute, $value): bool
+    public function validateInscricaoEstadualPe($attribute, $value, $parameters, $validator): bool
     {
         $inscricaoEstadual = $this->sanitize($value);
 
@@ -186,7 +185,7 @@ class Validator extends BaseValidator
     /**
      * @SuppressWarnings("PHPMD.UnusedFormalParameter")
      */
-    public function validateInscricaoEstadualPi($attribute, $value): bool
+    public function validateInscricaoEstadualPi($attribute, $value, $parameters, $validator): bool
     {
         $inscricaoEstadual = $this->sanitize($value);
 
@@ -196,7 +195,7 @@ class Validator extends BaseValidator
     /**
      * @SuppressWarnings("PHPMD.UnusedFormalParameter")
      */
-    public function validateInscricaoEstadualRj($attribute, $value): bool
+    public function validateInscricaoEstadualRj($attribute, $value, $parameters, $validator): bool
     {
         $inscricaoEstadual = $this->sanitize($value);
 
@@ -206,7 +205,7 @@ class Validator extends BaseValidator
     /**
      * @SuppressWarnings("PHPMD.UnusedFormalParameter")
      */
-    public function validateInscricaoEstadualRn($attribute, $value): bool
+    public function validateInscricaoEstadualRn($attribute, $value, $parameters, $validator): bool
     {
         $inscricaoEstadual = $this->sanitize($value);
 
@@ -216,7 +215,7 @@ class Validator extends BaseValidator
     /**
      * @SuppressWarnings("PHPMD.UnusedFormalParameter")
      */
-    public function validateInscricaoEstadualRs($attribute, $value): bool
+    public function validateInscricaoEstadualRs($attribute, $value, $parameters, $validator): bool
     {
         $inscricaoEstadual = $this->sanitize($value);
 
@@ -226,7 +225,7 @@ class Validator extends BaseValidator
     /**
      * @SuppressWarnings("PHPMD.UnusedFormalParameter")
      */
-    public function validateInscricaoEstadualRo($attribute, $value): bool
+    public function validateInscricaoEstadualRo($attribute, $value, $parameters, $validator): bool
     {
         $inscricaoEstadual = $this->sanitize($value);
 
@@ -236,7 +235,7 @@ class Validator extends BaseValidator
     /**
      * @SuppressWarnings("PHPMD.UnusedFormalParameter")
      */
-    public function validateInscricaoEstadualRr($attribute, $value): bool
+    public function validateInscricaoEstadualRr($attribute, $value, $parameters, $validator): bool
     {
         $inscricaoEstadual = $this->sanitize($value);
 
@@ -246,7 +245,7 @@ class Validator extends BaseValidator
     /**
      * @SuppressWarnings("PHPMD.UnusedFormalParameter")
      */
-    public function validateInscricaoEstadualSc($attribute, $value): bool
+    public function validateInscricaoEstadualSc($attribute, $value, $parameters, $validator): bool
     {
         $inscricaoEstadual = $this->sanitize($value);
 
@@ -256,7 +255,7 @@ class Validator extends BaseValidator
     /**
      * @SuppressWarnings("PHPMD.UnusedFormalParameter")
      */
-    public function validateInscricaoEstadualSp($attribute, $value): bool
+    public function validateInscricaoEstadualSp($attribute, $value, $parameters, $validator): bool
     {
         $inscricaoEstadual = $this->sanitize($value);
 
@@ -266,7 +265,7 @@ class Validator extends BaseValidator
     /**
      * @SuppressWarnings("PHPMD.UnusedFormalParameter")
      */
-    public function validateInscricaoEstadualSe($attribute, $value): bool
+    public function validateInscricaoEstadualSe($attribute, $value, $parameters, $validator): bool
     {
         $inscricaoEstadual = $this->sanitize($value);
 
@@ -276,7 +275,7 @@ class Validator extends BaseValidator
     /**
      * @SuppressWarnings("PHPMD.UnusedFormalParameter")
      */
-    public function validateInscricaoEstadualTo($attribute, $value): bool
+    public function validateInscricaoEstadualTo($attribute, $value, $parameters, $validator): bool
     {
         $inscricaoEstadual = $this->sanitize($value);
 
